@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //parent class
+       class person{
+           constructor(name,designation){
+               this.name=name;
+               this.designation=designation;
+           }
+           lean(){
+               console.log("learning something");
+           }
+           eat(){
+               console.log("eating")
+           }
+           sleep(){
+               console.log("sleeping");
+           }
+       }
+       class developer extends person{
+           constructor(name,designation,companyname){
+               super(name,designation);
+               this.companyname=companyname;
+           }
+           coding(){
+               console.log("javascript coding..........");
+           }
+       }
+       let person=new person("human","nothing")
+       console.log(person);
+    </script>
+</body>
+</html>

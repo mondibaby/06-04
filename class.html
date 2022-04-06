@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            
+    //Declaring class  
+    class Employee  
+      {  
+    //Initializing an object  
+        constructor(id,name)  
+        {  
+          this.id=id;  
+          this.name=name;  
+        }  
+    //Declaring method  
+        detail()  
+        {  
+      document.writeln(this.id+" "+this.name+"<br>")  
+        }  
+      }  
+    //passing object to a variable   
+    var baby1=new Employee(101,"baby");  
+    var baby2=new Employee(102,"satya");  
+    baby1.detail(); //calling method  
+    baby2.detail();  
+    </script> 
+    <script>
+        class Bike  
+        {  
+          constructor()  
+          {  
+            this.company="Honda";  
+          }  
+        }  
+        class Vehicle extends Bike {  
+          constructor(name,price) {  
+           super();  
+            this.name=name;  
+            this.price=price;  
+          }   
+        }  
+        var v = new Vehicle("Shine","70000");  
+        document.writeln(v.company+" "+v.name+" "+v.price);  
+    </script>
+  
+     <script>
+            
+      function baby(id,name,salary,phoneno){  
+      this.id=id;  
+      this.name=name;  
+      this.salary=salary; 
+      this.phoneno=phoneno; 
+      }  
+      e=new baby(103,"surya",20000,7794964289);  
+      document.write(e.id+" "+e.name+" "+e.salary+" "+e.phoneno, "<br/>");
+      e=new baby(104,"ravi",10000,9866955228);
+      document.write(e.id+" "+e.name+" "+e.salary+" "+e.phoneno);  
+    
+      </script><br>
+   
+     
+</body>
+</html>
